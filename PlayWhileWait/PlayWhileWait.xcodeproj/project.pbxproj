@@ -489,6 +489,7 @@
 				A6A800AD1C043B3100B0DCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6A800AE1C043B3100B0DCE0 /* Build configuration list for PBXNativeTarget "PlayWhileWaitTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +498,7 @@
 				A6A800B01C043B3100B0DCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6A800B11C043B3100B0DCE0 /* Build configuration list for PBXNativeTarget "PlayWhileWaitUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +507,7 @@
 				A6A800B31C043B3100B0DCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

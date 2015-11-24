@@ -17,10 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watchFrame" translatesAutoresizingMaskIntoConstraints="NO" id="ic9-no-WpQ">
+                                <rect key="frame" x="37" y="184" width="300" height="300"/>
+                                <animations/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PlayWhileUWait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s5-0A-Ceg">
-                                <rect key="frame" x="72" y="39" width="231" height="53"/>
+                                <rect key="frame" x="72" y="54" width="231" height="53"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="125" placeholderIntrinsicHeight="125" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBm-dG-ASd">
+                                <rect key="frame" x="69" y="284" width="100" height="100"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iO-lH-C7m">
+                                <rect key="frame" x="205" y="284" width="100" height="100"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRK-3P-2Xq">
+                                <rect key="frame" x="177" y="324" width="20" height="20"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="27"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -37,6 +63,10 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="appTitle" destination="3s5-0A-Ceg" id="JW6-h7-1ZP"/>
+                        <outlet property="betweenPlaceHolder" destination="YRK-3P-2Xq" id="W5s-sQ-2cW"/>
+                        <outlet property="frameCircle" destination="ic9-no-WpQ" id="hmt-RS-c9c"/>
+                        <outlet property="placeHolderForMin" destination="HBm-dG-ASd" id="0dT-MG-9bR"/>
+                        <outlet property="placeHolderForSec" destination="3iO-lH-C7m" id="n97-cn-8M6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -44,4 +74,7 @@
             <point key="canvasLocation" x="379.5" y="338.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="watchFrame" width="224" height="225"/>
+    </resources>
 </document>
